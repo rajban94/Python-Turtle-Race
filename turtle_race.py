@@ -2,6 +2,8 @@ import turtle
 import random
 import time
 
+###### Set up the Welcome Screen ######
+
 t1 = turtle.Turtle()
 t1.penup()
 t1.goto(0,0)
@@ -19,6 +21,8 @@ def screen_set():
   wn.bgcolor('green2')
 
   return wn
+
+###### Creating Racers ######
 
 def place_competitors():
   
@@ -41,7 +45,9 @@ def place_competitors():
     y=y-40
     
   return all_turtle
-  
+
+###### Drawing Finish Line ######
+
 def finish_line():
   
   f = turtle.Turtle()
@@ -69,6 +75,8 @@ def finish_line():
   f.hideturtle() 
   return f
 
+###### Main Race ######
+
 def race():
   
   screen_set()
@@ -93,6 +101,8 @@ def race():
         turtle.hideturtle()
         time.sleep(1)
       turtle.goto(x1,y1)
+
+###### Taking Input To start Play ######
 
 answer = wn.textinput("Prompt", "Strat/Play Again?")
 
